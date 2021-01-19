@@ -1,4 +1,4 @@
-package com.orangetalents.loteria;
+package com.orangeTalents.loteria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

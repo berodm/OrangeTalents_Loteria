@@ -1,4 +1,4 @@
-package com.orangetalents.loteria;
+package com.orangeTalents.loteria;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
