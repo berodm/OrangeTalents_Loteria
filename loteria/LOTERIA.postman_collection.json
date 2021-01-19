@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "6093e00b-b174-43f5-b29f-7702910c729d",
+		"name": "LOTERIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/cadastro/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cadastro/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cadastro",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/cadastro/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cadastro/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastro",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Jan 2021 15:08:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"date\": \"2021-01-19T14:58:41.000+00:00\",\n        \"nome\": \"Teste\",\n        \"email\": \"teste@email.com\",\n        \"aposta\": [\n            {\n                \"id\": 1,\n                \"date\": \"2021-01-19T14:58:45.000+00:00\",\n                \"descricao\": \"loteria\",\n                \"numero1\": 89,\n                \"numero2\": 43,\n                \"numero3\": 53,\n                \"numero4\": 94,\n                \"numero5\": 97\n            },\n            {\n                \"id\": 2,\n                \"date\": \"2021-01-19T15:02:22.000+00:00\",\n                \"descricao\": \"loteria\",\n                \"numero1\": 36,\n                \"numero2\": 73,\n                \"numero3\": 28,\n                \"numero4\": 82,\n                \"numero5\": 22\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"date\": \"2021-01-19T15:07:02.000+00:00\",\n        \"nome\": \"Beatriz\",\n        \"email\": \"bia@email.com\",\n        \"aposta\": [\n            {\n                \"id\": 4,\n                \"date\": \"2021-01-19T15:08:26.000+00:00\",\n                \"descricao\": \"loteria\",\n                \"numero1\": 17,\n                \"numero2\": 24,\n                \"numero3\": 32,\n                \"numero4\": 59,\n                \"numero5\": 56\n            },\n            {\n                \"id\": 5,\n                \"date\": \"2021-01-19T15:08:50.000+00:00\",\n                \"descricao\": \"loteria\",\n                \"numero1\": 74,\n                \"numero2\": 75,\n                \"numero3\": 68,\n                \"numero4\": 87,\n                \"numero5\": 71\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/cadastro/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Teste\",\r\n    \"email\": \"teste@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cadastro/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cadastro",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apostas/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"descricao\": \"loteria\",\r\n        \"cadastro\": {\r\n            \"id\": 1\r\n        }\r\n        }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apostas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apostas",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
