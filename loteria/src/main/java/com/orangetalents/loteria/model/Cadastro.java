@@ -42,6 +42,7 @@ public class Cadastro {
 	@JsonIgnoreProperties("cadastro")
 	private List<Aposta> aposta; //para mesclar as tabelas
 	
+	//GETTERS AND SETTERS
 	
 	public long getId() {
 		return id;

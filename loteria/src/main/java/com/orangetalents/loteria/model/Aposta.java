@@ -54,7 +54,7 @@ public class Aposta {
 	@JsonIgnoreProperties("aposta")
 	private Cadastro cadastro;
 	
-	
+	//GETTERS AND SETTERS
 
 	public Date getDate() {
 		return date;
